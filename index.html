@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaik Mobeena | Portfolio</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    body { background: #121212; color: #f5f5f5; line-height: 1.6; scroll-behavior: smooth; }
+
+    /* Header & Logo */
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 8%; background: #1f1f1f; position: sticky; top: 0; z-index: 1000;
+    }
+    .logo { font-size: 32px; font-weight: bold; color: #00adb5; }
+    
+    nav ul { list-style: none; display: flex; }
+    nav ul li { margin: 0 15px; }
+    nav ul li a { color: #f5f5f5; text-decoration: none; transition: 0.3s; font-weight: 500; }
+    nav ul li a:hover { color: #00adb5; }
+
+    /* Hero Section */
+    .hero {
+      display: flex; align-items: center; justify-content: center;
+      padding: 100px 10%; gap: 60px; min-height: 90vh;
+    }
+    
+    /* Profile Image with Zoom Out effect */
+    .hero img {
+      width: 320px; height: 320px; border-radius: 50%;
+      border: 5px solid #00adb5; object-fit: cover;
+      box-shadow: 0 0 25px rgba(0, 173, 181, 0.3);
+      transform: scale(0.8); /* Zoomed out as requested */
+      transition: transform 0.3s ease;
+    }
+    .hero img:hover { transform: scale(0.85); }
+
+    .intro { max-width: 600px; }
+    .intro h2 { font-weight: 400; font-size: 24px; }
+    .intro h1 { font-size: 56px; color: #00adb5; margin-bottom: 5px; }
+    .intro h3 { margin: 15px 0; font-weight: 400; color: #00adb5; font-size: 22px; }
+    .intro p { color: #cccccc; margin-bottom: 30px; font-size: 17px; }
+
+    /* Circular Social Icons */
+    .socials { display: flex; gap: 15px; margin-bottom: 35px; }
+    .socials a {
+      display: flex; align-items: center; justify-content: center;
+      width: 48px; height: 48px; border: 2px solid #00adb5; border-radius: 50%;
+      color: #00adb5; text-decoration: none; font-size: 20px; transition: 0.4s;
+    }
+    .socials a:hover {
+      background: #00adb5; color: #121212;
+      box-shadow: 0 0 20px rgba(0, 173, 181, 0.6);
+    }
+
+    /* Glowing Pill Button */
+    .btn {
+      display: inline-block; padding: 14px 45px;
+      background: #00adb5; color: #121212; text-decoration: none;
+      border-radius: 50px; font-weight: 700; font-size: 18px;
+      transition: 0.3s; box-shadow: 0 0 25px rgba(0, 173, 181, 0.5);
+    }
+    .btn:hover {
+      box-shadow: 0 0 40px rgba(0, 173, 181, 0.8);
+      transform: translateY(-2px);
+    }
+    .btn-outline {
+      background: transparent;
+      color: #00adb5;
+      border: 2px solid #00adb5;
+      box-shadow: none;
+      margin-left: 10px;
+    }
+    .btn-outline:hover {
+      background: #00adb5;
+      color: #121212;
+      box-shadow: 0 0 20px rgba(0, 173, 181, 0.6);
+    }
+
+    /* Content Sections */
+    section { padding: 100px 10% 60px; }
+    h2.section-title { text-align: center; font-size: 36px; margin-bottom: 50px; color: #00adb5; }
+    .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    
+    .card {
+      background: #1f1f1f; padding: 30px; border-radius: 15px;
+      border-bottom: 4px solid transparent; transition: 0.4s;
+    }
+    .card:hover { border-bottom: 4px solid #00adb5; transform: translateY(-10px); background: #252525; }
+    .card h4 { color: #00adb5; margin-bottom: 12px; font-size: 20px; }
+
+    .skills-list { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
+    .skill-tag { 
+        background: #1f1f1f; padding: 10px 25px; border-radius: 30px; 
+        border: 1px solid #00adb5; color: #f5f5f5; transition: 0.3s;
+    }
+    .skill-tag:hover { background: #00adb5; color: #121212; }
+
+    footer { text-align: center; padding: 40px; background: #1f1f1f; margin-top: 80px; color: #777; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">M</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#coursework">Coursework</a></li>
+        <li><a href="#strengths">Strengths</a></li>
+        <li><a href="#additional-info">Additional Info</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <img src="mubbula profile pic.jpeg" alt="Shaik Mobeena">
+    
+    <div class="intro">
+      <h2>Hello, It's Me</h2>
+      <h1>Shaik Mobeena</h1>
+      <h3>Frontend Developer | CSE Undergraduate</h3>
+      <p>Motivated Computer Science undergraduate with strong foundations in Java and problem-solving. Seeking opportunities to enhance full stack development skills and contribute to real-world software projects.</p>
+      
+      <div class="socials">
+        <a href="https://github.com/mobeenashaik1735" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/shaik-mobeena" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:mobeenas900@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      
+      <a href="Mobeena_Resume.pdf" class="btn" download>Download Resume</a>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="container">
+      <div class="card">
+        <h4>B.Tech in CSE</h4>
+        <p>MLR Institute of Technology, Hyderabad</p>
+        <p><small>2023 - 2027 (Expected) | CGPA: 8.01/10</small></p>
+      </div>
+      <div class="card">
+        <h4>Intermediate</h4>
+        <p>Deeksha Junior Degree College</p>
+        <p><small>Completed: 2023 | 85%</small></p>
+      </div>
+      <div class="card">
+        <h4>SSC</h4>
+        <p>Gowtama EM High School, Andhra Pradesh</p>
+        <p><small>Completed: 2021 | 90.17%</small></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-list">
+      <div class="skill-tag">Java</div>
+      <div class="skill-tag">Python</div>
+      <div class="skill-tag">C</div>
+      <div class="skill-tag">HTML & CSS</div>
+      <div class="skill-tag">JavaScript</div>
+      <div class="skill-tag">React</div>
+      <div class="skill-tag">Node.js</div>
+      <div class="skill-tag">MySQL & MongoDB</div>
+    </div>
+  </section>
+
+  <section id="coursework">
+    <h2 class="section-title">Relevant Coursework</h2>
+    <div class="container">
+      <div class="card">
+        <p>Data Structures and Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networks</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="strengths">
+    <h2 class="section-title">Strengths</h2>
+    <div class="container">
+      <div class="card">
+        <p>Strong problem-solving ability, quick learner, teamwork, good communication skills, consistent and self-motivated.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="additional-info">
+    <h2 class="section-title">Additional Information</h2>
+    <div class="container">
+      <div class="card">
+        <h4>Languages Known</h4>
+        <p>English, Telugu, Hindi</p>
+      </div>
+      <div class="card">
+        <h4>Hobbies</h4>
+        <p>Coding, Logical Problem Solving</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="container">
+      <div class="card">
+        <h4>Zignasa - Hackathon Project</h4>
+        <p>Built a web application enabling users to find hospitals offering government schemes and apply online. Delivered a working prototype within 24 hours.</p>
+      </div>
+      <div class="card">
+        <h4>GitHub Projects</h4>
+        <p>
+          Your GitHub account currently shows 0 public repositories. Keep your project repos public
+          and add links here. Profile:
+          <a href="https://github.com/mobeenashaik1735" target="_blank" style="color:#00adb5;">github.com/mobeenashaik1735</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2 class="section-title">Certifications</h2>
+    <div class="container">
+      <div class="card">
+        <h4>Cloud Computing NPTEL Certificate</h4>
+        <p style="margin-top:12px;">
+          <a
+            href="certifications/Cloud%20Computing%20NPTEL%20CERTIFICATE.pdf"
+            class="btn"
+            target="_blank"
+          >
+            View Certificate
+          </a>
+        </p>
+      </div>
+      <div class="card">
+        <h4>Introduction to Modern AI Certificate</h4>
+        <p style="margin-top:12px;">
+          <a
+            href="certifications/Introduction_to_Modern_AI_certificate_mobeenas900-gmail-com_3f63754c-f6cb-4560-bcf5-dbc15b20e64b.pdf"
+            class="btn"
+            target="_blank"
+          >
+            View Certificate
+          </a>
+        </p>
+      </div>
+      <div class="card">
+        <h4>Cloud Computing using Microsoft Azure</h4>
+        <p style="margin-top:12px;">
+          <a
+            href="certifications/TechA%20Cloud%20Computing%20using%20Microsoft%20Azure%20Certification.pdf"
+            class="btn"
+            target="_blank"
+          >
+            View Certificate
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Shaik Mobeena | Hyderabad</p>
+  </footer>
+
+</body>
+</html>
